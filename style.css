@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: fixed;
+}
+
+.container{
+    background-image: url('./images/background-image.png');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    font-family: sans-serif;
+    border: 2px solid red;
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.logo-img{
+    /* border: 2px solid; */
+    margin-left: 3rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.logo-img:hover{
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+}
+
+.navItems{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navItems li{
+    margin-left: 25px;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.navItems li:hover{
+    color: #f1405e;
+}
+
+.btn_icn{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-top: 15px;
+}
+
+.btn_icn img{
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.btn_icn button{
+    padding: 10px 20px;
+    background: #f1405e;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+.btn_icn button:hover{
+    cursor: pointer;
+    color: #000;
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+}
+
+.left-div{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    display: inline-block;
+}
+
+#t-1, #t-2{
+    font-size: 55px;
+}
+
+/* paragraph text styling */
+#para-text-1{
+    margin-top: 25px;
+    font-size: 21px;
+    color: #808080;
+}
+
+#para-text-2{
+    font-size: 21px;
+    margin-top: 3px;
+    color: #808080;
+}
+
+/* style to button's div */
+.btn-grp{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+/* Apply here & Loan Calculator button styling */
+#btn-1{
+    padding: 10px;
+    background: #f1405e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-2{
+    margin-left: 20px;
+    padding: 10px;
+    background: #fff;
+    color: #f1405e;
+    border: 1px solid #f1405e;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-1:hover{
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+}
+
+#btn-2:hover{
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+}
+
+/* car icon and Car Loan button styling */
+.carBtn-con{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 200px;
+    background: #fff;
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+    width: 150px;
+    margin-left: 45%;
+}
+
+.carBtn-con img{
+    margin-right: 15px;
+}
+
+.carBtn-con span{
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+/* centered image container styling */
+.cen-img{
+    float: right;
+}
+
+/* centered image styling */
+.cen-img img{
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -63%);
+}
+
+/* Home icon and Home Loan button styling */
+.home-loan-con{
+    float: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 200px;
+    background: #fff;
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+    width: 150px;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+.home-loan-con img{
+    margin-right: 7px;
+}
+
+.home-loan-con span{
+    margin-left: 3px;
+    font-size: 15px;
+}
+
+/* footer items */
+.f-Items{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 5rem;
+    width: 16%;
+}
+
+/* style to footer list */
+.f-list{
+    display: flex;
+    list-style: none;
+}
+
+.f-list span{
+    font-size: 20px;
+}
+
+/* style to footer lists */
+.f-Items li{
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.f-Items li:hover{
+    box-shadow: 5px 5px 20px 0px rgba(32,30,30,0.69);
+}
+
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 1280px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .navItems li{
+        font-size: 15px;
+    }
+      .cen-img img{
+        margin-top: 50px;
+        margin-left: 15%;
+        width: 800px;
+    }
+    .f-Items li span{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container{
+      width: 100%;
+      height: 100vh;
+    }
+    .navItems li{
+      font-size: 12px;
+    }
+    .cen-img img{
+      margin-top: 50px;
+      margin-left: 15%;
+      margin-bottom: 20px;
+      width: 700px;
+      height: 500px;
+    }
+    .f-Items li span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .container{
+      width: 100%;
+      height: 100vh;
+    }
+    .navItems li{
+      font-size: 9px;
+    }
+    .cen-img img{
+      margin-top: 90px;
+      width: 500px;
+      height: 400px;
+    }
+    .home-loan-con{
+        margin-left: 20px;
+    }
+    .f-Items li span{
+        display: none;
+    }
+    #para-text-1, #para-text-2{
+        font-size: 14px;
+    }
+    #t-1, #t-2{
+        font-size: 35px;
+    }
+}
+  
+  
